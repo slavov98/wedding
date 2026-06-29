@@ -5,38 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Сърдечно Ви каним</title>
 
-<!--
-  ════════════════════════════════════════════════════════════════
-  HOW TO MAKE THIS YOURS
-  ────────────────────────────────────────────────────────────────
-  Everything you can change lives in the  const L = { ... }  object
-  near the top of the <script> below: names, date, venue, schedule,
-  dress code, RSVP-by date, and the two photos.
-
-  • Your photo:   set  L.couplePhoto  to an image URL or a
-                  "data:image/jpeg;base64,..." string. Leave it as
-                  ""  to show the elegant empty frame.
-  • Venue photo:  already embedded in  L.venuePhoto . Replace if you like.
-
-  RECEIVE RSVPs BY EMAIL (free, no server) — destination is already set to
-  slavovdilyan98@gmail.com. One step left to make it fully automatic:
-  1. Go to https://web3forms.com , enter slavovdilyan98@gmail.com, copy the
-     Access Key it emails you.
-  2. Near the TOP of the <script> below, find the big boxed section and paste
-     your key into:   const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
-     (replace YOUR_ACCESS_KEY_HERE, keep the quotes).
-  Each reply is then emailed straight to that inbox, with no app opening.
-  Until the key is added, the form falls back to opening the guest's email
-  app with the reply pre-addressed to slavovdilyan98@gmail.com.
-
-  NOTE: the live send works once the file is HOSTED (Netlify, Cloudflare
-  Pages, GitHub Pages). Inside a preview window the browser may block it.
-
-  Host the file anywhere static (Netlify, Cloudflare Pages, GitHub Pages)
-  and share the link with your guests.
-  ════════════════════════════════════════════════════════════════
--->
-
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -476,7 +444,6 @@
     });
   });
 
-  /* ---- submit ---- */
   const form = $("form"), errEl = $("error"), btn = $("submit");
   const showError = m => errEl.textContent = m;
 
